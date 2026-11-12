@@ -1,0 +1,15 @@
+[package]
+name = "statistics-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Bit-exact Rust versions of statistics.mean/variance/stdev/pvariance/pstdev (exact rational arithmetic, correct rounding)"
+license = "PSF-2.0"
+
+[lib]
+name = "statistics_core"
+path = "src/core.rs"
+
+[dependencies]
+num-bigint = "0.4"
+num-integer = "0.1"
+num-traits = "0.2"

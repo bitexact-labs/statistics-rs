@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2"]
+build-backend = "maturin"
+
+[project]
+name = "statistics-rs"
+version = "0.1.0"
+description = "Drop-in statistics module: mean/variance/stdev/pvariance/pstdev in Rust, bit-identical to the stdlib"
+license = { text = "PSF-2.0" }
+requires-python = ">=3.10"
+
+[tool.maturin]
+module-name = "statistics_rs._core"
+python-source = "."
